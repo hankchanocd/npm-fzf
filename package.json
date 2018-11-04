@@ -1,0 +1,25 @@
+{
+  "name": "npm-fzf",
+  "version": "1.0.0",
+  "description": "Fuzzy search npm package with fzf",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hankchanocd/npm-fzf.git"
+  },
+  "keywords": [
+    "npf",
+    "npm",
+    "fzf",
+    "search"
+  ],
+  "author": "Hank Chan <hankchanth@icloud.com> (https://github.com/hankchanocd)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hankchanocd/npm-fzf/issues"
+  },
+  "homepage": "https://github.com/hankchanocd/npm-fzf#readme"
+}
