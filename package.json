@@ -4,7 +4,8 @@
   "description": "Fuzzy search npm package with fzf",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,14 @@
   "homepage": "https://github.com/hankchanocd/npm-fzf#readme",
   "dependencies": {
     "@hankchanocd/npmlist": "^7.0.4"
+  },
+  "devDependencies": {
+    "commitizen": "^3.0.4",
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
