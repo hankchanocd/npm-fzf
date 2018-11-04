@@ -1,2 +1,2 @@
 # npm-fzf
-List npm package with fzf
+Fuzzy search npm package with fzf
