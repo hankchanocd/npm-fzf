@@ -1,6 +1,6 @@
 # npm-fzf
 
-> Fuzzy search npm package with `fzf`
+> Fuzzy search npm modules with `fzf`
 
 ## Install
 
