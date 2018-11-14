@@ -3,6 +3,9 @@
   "version": "0.0.0-semantically-released",
   "description": "Fuzzy search npm package with fzf",
   "main": "index.js",
+  "bin": {
+    "npf": "index.js"
+  },
   "scripts": {
     "test": "jest",
     "commit": "git-cz",
