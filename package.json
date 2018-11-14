@@ -6,6 +6,9 @@
   "bin": {
     "npf": "index.js"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "jest",
     "commit": "git-cz",
