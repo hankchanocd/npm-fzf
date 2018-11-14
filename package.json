@@ -1,11 +1,12 @@
 {
   "name": "npm-fzf",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "Fuzzy search npm package with fzf",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,8 @@
   },
   "devDependencies": {
     "commitizen": "^3.0.4",
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.11.0"
   },
   "config": {
     "commitizen": {
