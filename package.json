@@ -10,7 +10,11 @@
     "node": ">=8"
   },
   "scripts": {
-    "test": "jest",
+    "test": "npm-run-all jest eslint --parallel --silent",
+    "jest": "jest --forceExit --detectOpenHandles",
+    "eslint": "eslint . --ignore-path .gitignore --cache --cache-location \"./eslint/.eslintcache\" ",
+    "eslint:makeHtml": "npm run eslint -- --format html -o ./eslint/report.html",
+    "eslint:open": "npm run eslint:makeHtml --silent && opn ./eslint/report.html",
     "commit": "git-cz",
     "semantic-release": "semantic-release"
   },
@@ -38,9 +42,20 @@
   "devDependencies": {
     "commitizen": "^3.0.4",
     "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "ghooks": "^2.0.4",
+    "jest": "^23.6.0",
+    "npm-run-all": "^4.1.3",
+    "opn-cli": "^4.0.0",
     "semantic-release": "^15.12.0"
   },
   "config": {
+    "ghooks": {
+      "pre-push": "npm run test"
+    },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }

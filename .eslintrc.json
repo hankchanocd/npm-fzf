@@ -1,0 +1,50 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": false
+		}
+	},
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"globals": {
+		"MY_GLOBAL": true,
+		"EventEmitter": true,
+		"Promise": true,
+		"document": true,
+		"window": true,
+		"jest/globals": true
+	},
+	"rules": {
+		"comma-dangle": [2, "never"],
+		"no-console": 0,
+		"no-constant-condition": 2,
+		"no-control-regex": 0,
+		"no-debugger": 1,
+		"no-dupe-keys": 2,
+		"no-duplicate-case": 2,
+		"no-empty-character-class": 2,
+		"no-empty": 2,
+		"no-ternary": 0,
+		"no-unused-vars": 1,
+		"semi": 2,
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error"
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:promise/recommended",
+		"plugin:jest/recommended"
+	],
+	"plugins": [
+		"eslint-plugin-import",
+		"eslint-plugin-promise",
+		"eslint-plugin-jest"
+	]
+}
