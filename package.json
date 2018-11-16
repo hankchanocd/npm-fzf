@@ -29,6 +29,11 @@
     "fzf",
     "search"
   ],
+  "files": [
+    "src/",
+    "bin/",
+    "README.md"
+  ],
   "author": "Hank Chan <hankchanth@icloud.com> (https://github.com/hankchanocd)",
   "license": "MIT",
   "bugs": {
