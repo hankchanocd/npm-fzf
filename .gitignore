@@ -42,7 +42,8 @@ typings/
 # Optional npm cache directory
 .npm
 
-# Optional eslint cache
+# Eslint
+eslint/
 .eslintcache
 
 # Optional REPL history
@@ -59,3 +60,6 @@ typings/
 
 # next.js build output
 .next
+
+# Text Editor
+.vscode/
