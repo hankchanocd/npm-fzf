@@ -41,13 +41,13 @@ program
 	.on('--help', function () {
 		console.log();
 		console.log('  Examples:');
-		console.log('    ' + chalk.blueBright(`npl, ${chalk.white('a fzf list with preview of local dependencies')}`));
-		console.log('    ' + chalk.blueBright(`npl -t, ${chalk.white('a fzf list of latest global installs')}`));
-		console.log('    ' + chalk.blueBright(`npl -s, ${chalk.white("a fzf list of npm scripts using fzf")}`));
-		console.log('    ' + chalk.blueBright(`npl -g --no-preview, ${chalk.white('a fuzzy list with no preview of global installs')}`));
-		console.log('    ' + chalk.blueBright(`npl -s --no-fuzzy, ${chalk.white("a normal list of npm scripts")}`));
-		console.log('    ' + chalk.blueBright(`npl -g --details, ${chalk.white('a normal, detailed list of global installs')}`));
-		console.log('    ' + chalk.blueBright(`npl [module], ${chalk.white("a fuzzy list with preview of a module's dependencies fetched from NPM registry")}`));
+		console.log('    ' + chalk.blueBright(`npf, ${chalk.white('a fzf list with preview of local dependencies')}`));
+		console.log('    ' + chalk.blueBright(`npf -t, ${chalk.white('a fzf list of latest global installs')}`));
+		console.log('    ' + chalk.blueBright(`npf -s, ${chalk.white("a fzf list of npm scripts using fzf")}`));
+		console.log('    ' + chalk.blueBright(`npf -g --no-preview, ${chalk.white('a fuzzy list with no preview of global installs')}`));
+		console.log('    ' + chalk.blueBright(`npf -s --no-fuzzy, ${chalk.white("a normal list of npm scripts")}`));
+		console.log('    ' + chalk.blueBright(`npf -g --details, ${chalk.white('a normal, detailed list of global installs')}`));
+		console.log('    ' + chalk.blueBright(`npf [module], ${chalk.white("a fuzzy list with preview of a module's dependencies fetched from NPM registry")}`));
 		console.log();
 	})
 	.parse(process.argv);
