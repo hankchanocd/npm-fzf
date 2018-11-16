@@ -15,6 +15,7 @@
     "eslint": "eslint . --ignore-path .gitignore --cache --cache-location \"./eslint/.eslintcache\" ",
     "eslint:makeHtml": "npm run eslint -- --format html -o ./eslint/report.html",
     "eslint:open": "npm run eslint:makeHtml --silent && opn ./eslint/report.html",
+    "watch": "nodemon --exec npm run test",
     "commit": "git-cz",
     "semantic-release": "semantic-release"
   },
@@ -27,6 +28,11 @@
     "npm",
     "fzf",
     "search"
+  ],
+  "files": [
+    "src/",
+    "bin/",
+    "README.md"
   ],
   "author": "Hank Chan <hankchanth@icloud.com> (https://github.com/hankchanocd)",
   "license": "MIT",
@@ -48,6 +54,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "ghooks": "^2.0.4",
     "jest": "^23.6.0",
+    "nodemon": "^1.18.6",
     "npm-run-all": "^4.1.3",
     "opn-cli": "^4.0.0",
     "semantic-release": "^15.12.0"
