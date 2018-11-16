@@ -2,9 +2,9 @@
   "name": "npm-fzf",
   "version": "0.0.0-semantically-released",
   "description": "Fuzzy search npm package with fzf",
-  "main": "index.js",
+  "main": "./bin/cli.js",
   "bin": {
-    "npf": "index.js"
+    "npf": "./bin/cli.js"
   },
   "engines": {
     "node": ">=8"
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/hankchanocd/npm-fzf#readme",
   "dependencies": {
-    "@hankchanocd/npmlist": "^7.1.0",
+    "@hankchanocd/npmlist": "^7.1.1",
     "command-exists": "^1.2.8",
     "node-fzf": "^0.1.2"
   },
