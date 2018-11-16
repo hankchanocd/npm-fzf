@@ -1,0 +1,28 @@
+sudo: false
+
+language: node_js
+# Fix node version to v10
+node_js:
+  - "10"
+
+# Install mechanism is now defaulted to the faster 'npm ci' instead of 'npm install'. We are specifying it here to make it clear
+# See https://docs.npmjs.com/cli/ci
+install:
+  - npm install
+
+# Since 'npm ci' clears "node_modules/" before installing, our cache must be moved to "$HOME/.npm"
+cache:
+  directories:
+    - "node_modules/"
+
+# Trigger Travis CI only when master branch is pushed, ignoring develop branch
+branches:
+  only:
+    - master
+
+script:
+  # `npm run build` is run before `npm test`
+  - npm test
+
+after_success:
+  - npm run semantic-release
