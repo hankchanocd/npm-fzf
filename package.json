@@ -48,6 +48,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "ghooks": "^2.0.4",
     "jest": "^23.6.0",
+    "opn-cli": "^4.0.0",
     "semantic-release": "^15.12.0"
   },
   "config": {
