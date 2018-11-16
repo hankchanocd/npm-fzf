@@ -114,6 +114,14 @@ $ npf -g --details
 
 <p align="center"><img src="https://raw.githubusercontent.com/hankchanocd/npm-fzf/master/images/details_demo.png" width="650"></p>
 
+## API
+
+`npf` uses [`npmlist`](https://github.com/hankchanocd/npmlist)'s API for getting modules' dependencies. `npf` itself does not expose any API.
+
+```bash
+$ npm install @hankchanocd/npmlist
+```
+
 ## Tests
 
 To perform unit tests and integration tests, simply run `npm test`. (Need Help)
@@ -126,7 +134,7 @@ To perform unit tests and integration tests, simply run `npm test`. (Need Help)
 
 If you have a suggestion, leave it in [Issues](https://github.com/hankchanocd/npm-fzf/issues) for discussion first. I will reply in no more than 3 days. See [here](./CONTRIBUTING.md) on how to contribute.
 
-[`fzf`](https://github.com/junegunn/fzf) empowers many features that would otherwise be hard to imagine. If you haven't of `fzf`, check out junegunn's [`fzf`](https://github.com/junegunn/fzf). Check out my [Dotfiles](https://gitlab.com/hankchanocd/dotfiles/tree/master) to see more use cases of `fzf`.
+[`fzf`](https://github.com/junegunn/fzf) empowers many features that would otherwise be hard to imagine. If you haven't heard of `fzf`, check out junegunn's [`fzf`](https://github.com/junegunn/fzf). Check out my [Dotfiles](https://gitlab.com/hankchanocd/dotfiles/tree/master) to see more use cases of `fzf`.
 
 ## License
 
