@@ -1,11 +1,18 @@
 {
   "name": "npm-fzf",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "Fuzzy search npm package with fzf",
-  "main": "index.js",
+  "main": "./bin/cli.js",
+  "bin": {
+    "npf": "./bin/cli.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "jest",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -24,11 +31,14 @@
   },
   "homepage": "https://github.com/hankchanocd/npm-fzf#readme",
   "dependencies": {
-    "@hankchanocd/npmlist": "^7.0.4"
+    "@hankchanocd/npmlist": "^7.1.1",
+    "command-exists": "^1.2.8",
+    "node-fzf": "^0.1.2"
   },
   "devDependencies": {
     "commitizen": "^3.0.4",
-    "cz-conventional-changelog": "^2.1.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.12.0"
   },
   "config": {
     "commitizen": {
