@@ -5,6 +5,8 @@
 // Dependencies
 const program = require('commander');
 
+const infoProgram = require('./cli.info');
+
 program
 	.version('1.0.0', '-v, --version')
 	.description('npm with fzf')
@@ -14,7 +16,7 @@ program
 	.option('-P, --no-preview', 'disable the default fzf preview mode')
 	.option('-F, --no-fuzzy', 'disable the default fuzzy mode and resort to stdout');
 
-
+infoProgram(program);
 
 program.parse(process.argv);
 
