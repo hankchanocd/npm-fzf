@@ -6,6 +6,7 @@
 const program = require('commander');
 
 const infoProgram = require('./cli.info');
+const runProgram = require('./cli.run');
 
 program
 	.version('1.0.0', '-v, --version')
@@ -17,6 +18,7 @@ program
 	.option('-F, --no-fuzzy', 'disable the default fuzzy mode and resort to stdout');
 
 infoProgram(program);
+runProgram(program);
 
 program.parse(process.argv);
 
