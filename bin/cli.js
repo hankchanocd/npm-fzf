@@ -5,6 +5,7 @@
 // Dependencies
 const program = require('commander');
 
+const listProgram = require('./cli.list');
 const infoProgram = require('./cli.info');
 const runProgram = require('./cli.run');
 
@@ -17,6 +18,7 @@ program
 	.option('-P, --no-preview', 'disable the default fzf preview mode')
 	.option('-F, --no-fuzzy', 'disable the default fuzzy mode and resort to stdout');
 
+listProgram(program);
 infoProgram(program);
 runProgram(program);
 
