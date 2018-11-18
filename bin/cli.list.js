@@ -89,7 +89,7 @@ module.exports = function listProgram(program) {
 			}
 
 			function recentGlobalInstalls() {
-				if (!program.fuzzy) npmRecent().print();
+				if (!program.fuzzy) return npmRecent().print();
 				if (program.details) return console.log(`This combination does not exist`);
 
 				(program.preview) ? npmRecent().fzfPreview(): npmRecent().fzf();
