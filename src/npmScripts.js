@@ -15,8 +15,8 @@ const commandExists = util.promisify(require('command-exists'));
 
 // Local dependencies
 const {
-    npmScripts,
-    stringUtil
+	npmScripts,
+	stringUtil
 } = require('@hankchanocd/npmlist');
 
 
@@ -24,24 +24,15 @@ module.exports = () => {
 	return {
 		fzf() {
 			commandExists('fzf').then(ans => {
-
-				if (ans) {
-					return npmScripts().raw()
-						.then(i => spawn(`echo "${i}" | tr ',' '\n' |
-								fzf --reverse --cycle --ansi --height=40% | tr ' ' '\n' | head -n 1 | xargs npm run `, {
-							stdio: 'inherit',
-							shell: true
-						}))
-						.catch(err => console.log(chalk.redBright(err)));
-
-				} else {
-					return defaultNodeFzf();
-				}
-
-			}).catch(err => console.log(err));
+					if (!ans) {
+						return defaultNodeFzf();
+					} else {
+						return fzf();
+					}
+				})
+				.catch(err => console.log(chalk.redBright(err)));
 
 		},
-
 
 		print() {
 			npmScripts().default();
@@ -49,6 +40,15 @@ module.exports = () => {
 	};
 };
 
+async function fzf() {
+	let result = await npmScripts().raw();
+
+	return spawn(`echo "${result}" | tr ',' '\n' |
+								fzf --reverse --cycle --ansi --height=40% | tr ' ' '\n' | head -n 1 | xargs npm run `, {
+		stdio: 'inherit',
+		shell: true
+	});
+}
 
 async function defaultNodeFzf() {
 	let result = await npmScripts().raw();
@@ -62,9 +62,9 @@ async function defaultNodeFzf() {
 			return console.log('No matches for:', query);
 		}
 
-        let key = selected.value.split(' ')[0];
-        key = stringUtil.getRidOfColors(key);
-        key = stringUtil.getRidOfQuotationMarks(key);
+		let key = selected.value.split(' ')[0];
+		key = stringUtil.getRidOfColors(key);
+		key = stringUtil.getRidOfQuotationMarks(key);
 
 		spawn('npm', ['run', key], {
 			stdio: [process.stdin, process.stdout, process.stderr]
