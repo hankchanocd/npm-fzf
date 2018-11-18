@@ -11,7 +11,7 @@ const runProgram = require('./cli.run');
 const searchProgram = require('./cli.search');
 
 program
-	.version('1.0.0', '-v, --version')
+	.version('1.1.0', '-v, --version')
 	.description('npm with fzf')
 
 	// Flavor flags:
