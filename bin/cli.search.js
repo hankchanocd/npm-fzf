@@ -23,9 +23,9 @@ module.exports = function infoProgram(program) {
 		.on('--help', function () {
 			console.log();
 			console.log('  Examples:');
-			console.log('    ' + chalk.blueBright(`npf search [module], ${chalk.white("fuzzy search for npm modules with preview")}`));
-			console.log('    ' + chalk.blueBright(`npf search [module] --no-preview, ${chalk.white("fuzzy search for npm modules without preview")}`));
-			console.log('    ' + chalk.blueBright(`npf [module] --no-fuzzy, ${chalk.white("plain search for npm modules")}`));
+			console.log('    ' + chalk.blueBright(`npf search <module...>, ${chalk.white("fuzzy search for npm modules with preview")}`));
+			console.log('    ' + chalk.blueBright(`npf search <module...> --no-preview, ${chalk.white("fuzzy search for npm modules without preview")}`));
+			console.log('    ' + chalk.blueBright(`npf search <module...> --no-fuzzy, ${chalk.white("plain search for npm modules")}`));
 			console.log();
 		})
 		.action(function (module) {
