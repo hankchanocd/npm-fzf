@@ -5,20 +5,17 @@
 
 // Dependencies
 const npmDependencies = require('./npmDependencies');
-
-const npmScripts = require('./npmScripts');
-
-const npmRegistry = require('./npmRegistry');
-
-const npmRecent = require('./npmRecent');
-
 const npmGlobal = require('./npmGlobal');
-
+const npmRecent = require('./npmRecent');
+const npmRegistry = require('./npmRegistry');
+const npmScripts = require('./npmScripts');
+const npmSearch = require('./npmSearch');
 
 module.exports = {
 	npmDependencies,
-	npmScripts,
-	npmRegistry,
+	npmGlobal,
 	npmRecent,
-	npmGlobal
+	npmRegistry,
+	npmScripts,
+	npmSearch
 };

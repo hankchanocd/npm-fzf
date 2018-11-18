@@ -8,6 +8,7 @@ const program = require('commander');
 const listProgram = require('./cli.list');
 const infoProgram = require('./cli.info');
 const runProgram = require('./cli.run');
+const searchProgram = require('./cli.search');
 
 program
 	.version('1.0.0', '-v, --version')
@@ -21,6 +22,7 @@ program
 listProgram(program);
 infoProgram(program);
 runProgram(program);
+searchProgram(program);
 
 program.parse(process.argv);
 
