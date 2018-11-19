@@ -10,8 +10,9 @@
 <img alt="demo animation" width="700" src="https://hankchanocd.github.io/npf/examples/demo.svg" />
 </p>
 <br />
+<br />
 
-`npm-fzf`, also called `npf`, fuzzifies some most commonly used npm commands with [`fzf`](https://github.com/junegunn/fzf)i.e. `npm ls`, `npm search`, `npm run`, creating a more fulfilling develop experience at terminal.
+`npm-fzf`, also called `npf`, fuzzifies some most commonly used npm commands with [`fzf`](https://github.com/junegunn/fzf), i.e. `npm ls`, `npm search`, `npm run`, creating a more fulfilling develop experience at terminal.
 
 ## Requirements
 
@@ -30,7 +31,7 @@ $ npm install -g npm-fzf
 ```
 Usage: npf [options] [command]
 
-npm with fzf
+Fuzzy search npm modules with fzf
 
 Options:
   -v, --version       output the version number
