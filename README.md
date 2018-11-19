@@ -1,7 +1,8 @@
 # npm-fzf
- &nbsp;&nbsp; [![npm](https://img.shields.io/npm/v/npm-fzf.svg)](https://www.npmjs.com/package/npm-fzf) [![Build Status](https://travis-ci.org/hankchanocd/npm-fzf.svg?branch=master)](https://travis-ci.org/hankchanocd/npm-fzf) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Known Vulnerabilities](https://snyk.io/test/github/hankchanocd/npm-fzf/badge.svg?targetFile=package.json)](https://snyk.io/test/github/hankchanocd/npm-fzf?targetFile=package.json) [![Github issues](https://img.shields.io/github/issues/hankchanocd/npm-fzf.svg)](https://github.com/hankchanocd/npm-fzf/issues)
+ &nbsp;&nbsp; [![npm](https://img.shields.io/npm/v/npm-fzf.svg)](https://www.npmjs.com/package/npm-fzf) [![install size](https://packagephobia.now.sh/badge?p=npm-fzf)](https://packagephobia.now.sh/result?p=npm-fzf) [![Build Status](https://travis-ci.org/hankchanocd/npm-fzf.svg?branch=master)](https://travis-ci.org/hankchanocd/npm-fzf) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Known Vulnerabilities](https://snyk.io/test/github/hankchanocd/npm-fzf/badge.svg?targetFile=package.json)](https://snyk.io/test/github/hankchanocd/npm-fzf?targetFile=package.json) [![Github issues](https://img.shields.io/github/issues/hankchanocd/npm-fzf.svg)](https://github.com/hankchanocd/npm-fzf/issues)
 
-> npm with `fzf`
+> Fuzzy search npm modules with `fzf`
+
 
 <br />
 <br />
@@ -9,8 +10,9 @@
 <img alt="demo animation" width="700" src="https://hankchanocd.github.io/npf/examples/demo.svg" />
 </p>
 <br />
+<br />
 
-`npm-fzf`, also called `npf`, fuzzifies some most commonly used npm commands with [`fzf`](https://github.com/junegunn/fzf)i.e. `npm ls`, `npm search`, `npm run`, creating a more fulfilling develop experience at terminal.
+`npm-fzf`, also called `npf`, fuzzifies some most commonly used npm commands with [`fzf`](https://github.com/junegunn/fzf), i.e. `npm ls`, `npm search`, `npm run`, creating a more fulfilling develop experience at terminal.
 
 ## Requirements
 
@@ -29,7 +31,7 @@ $ npm install -g npm-fzf
 ```
 Usage: npf [options] [command]
 
-npm with fzf
+Fuzzy search npm modules with fzf
 
 Options:
   -v, --version       output the version number

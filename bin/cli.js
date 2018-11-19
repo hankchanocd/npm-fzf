@@ -11,8 +11,8 @@ const runProgram = require('./cli.run');
 const searchProgram = require('./cli.search');
 
 program
-	.version('1.0.0', '-v, --version')
-	.description('npm with fzf')
+	.version('1.1.0', '-v, --version')
+	.description('Fuzzy search npm modules with fzf')
 
 	// Flavor flags:
 	.option('-d, --details', 'include details to each dependency, but disable the fuzzy mode')
