@@ -6,12 +6,14 @@
 // Dependencies
 const chalk = require('chalk');
 const spawn = require('child_process').spawn;
-const util = require('util');
+const {
+	promisify
+} = require("es6-promisify");
 
 // Default to node-fzf, the much less capable implementation of fzf, only when fzf is not installed.
 // Using node-fzf will lose many features
-const nfzf = require('node-fzf');
-const commandExists = util.promisify(require('command-exists'));
+const nfzf = promisify(require('node-fzf'));
+const commandExists = promisify(require('command-exists'));
 
 // Local dependencies
 const {
@@ -63,7 +65,6 @@ module.exports = (module = '') => {
 						.catch(err => console.log(chalk.redBright(err)));
 
 				} else {
-					console.log(`The default node-fzf doesn't have preview option`);
 					return defaultNodeFzf(module);
 				}
 
@@ -82,22 +83,26 @@ module.exports = (module = '') => {
 
 
 function defaultNodeFzf(module = '') {
+	console.log(`Warning: The default node-fzf doesn't have preview option`);
+
 	if (!module) {
 		return console.log(chalk.redBright(`Please provide a module`));
 	}
 
 	return npmSearch(module)
 		.then(i => i.raw())
-		.then(i => nfzf(i, function (result) {
+		.then(i => nfzf(i))
+		.then(i => {
 			const {
 				selected,
 				query
-			} = result;
+			} = i;
 			if (!selected) {
 				console.log('No matches for:', query);
 			} else {
 				console.log(selected.value);
 			}
-		}))
+			return;
+		})
 		.catch(err => console.log(chalk.redBright(err)));
 }
