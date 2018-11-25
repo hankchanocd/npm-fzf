@@ -1,10 +1,10 @@
 # npm-fzf
- [![npm](https://img.shields.io/npm/v/npm-fzf.svg)](https://www.npmjs.com/package/npm-fzf) [![David](https://img.shields.io/david/hankchanocd/npm-fzf.svg)](https://david-dm.org) [![David](https://img.shields.io/david/dev/hankchanocd/npm-fzf.svg)](https://david-dm.org)
 
- [![Build Status](https://travis-ci.org/hankchanocd/npm-fzf.svg?branch=master)](https://travis-ci.org/hankchanocd/npm-fzf) [![Github issues](https://img.shields.io/github/issues/hankchanocd/npm-fzf.svg)](https://github.com/hankchanocd/npm-fzf/issues) [![Known Vulnerabilities](https://snyk.io/test/github/hankchanocd/npm-fzf/badge.svg?targetFile=package.json)](https://snyk.io/test/github/hankchanocd/npm-fzf?targetFile=package.json) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![npm](https://img.shields.io/npm/v/npm-fzf.svg)](https://www.npmjs.com/package/npm-fzf) [![David](https://img.shields.io/david/hankchanocd/npm-fzf.svg)](https://david-dm.org) [![David](https://img.shields.io/david/dev/hankchanocd/npm-fzf.svg)](https://david-dm.org)
+
+[![Build Status](https://travis-ci.org/hankchanocd/npm-fzf.svg?branch=master)](https://travis-ci.org/hankchanocd/npm-fzf) [![Github issues](https://img.shields.io/github/issues/hankchanocd/npm-fzf.svg)](https://github.com/hankchanocd/npm-fzf/issues) [![Known Vulnerabilities](https://snyk.io/test/github/hankchanocd/npm-fzf/badge.svg?targetFile=package.json)](https://snyk.io/test/github/hankchanocd/npm-fzf?targetFile=package.json) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 > Fuzzy search npm modules with `fzf`
-
 
 <br />
 <br />
@@ -72,7 +72,6 @@ $ npf search express react
 
 <p align="center"><img src="https://raw.githubusercontent.com/hankchanocd/npm-fzf/master/images/search_demo.png" width="650"></p>
 
-
 ### `npf list`
 
 ```
@@ -89,6 +88,7 @@ Options:
   Examples:
     npf ls, a fzf list with preview of local dependencies
     npf ls -t, a fzf list of latest global installs
+    npf ls -t --no-fuzzy, a normal list of latest global installs
     npf ls -g --no-preview, a fuzzy list with no preview of global installs
     npf ls -g --details, a normal, detailed list of global installs
 ```
@@ -118,7 +118,6 @@ $ npf ls -t
 ```
 
 <p align="center"><img src="https://raw.githubusercontent.com/hankchanocd/npm-fzf/master/images/recent_demo.png" width="650"></p>
-
 
 ### Turn off preview mode
 

@@ -37,6 +37,7 @@ module.exports = function listProgram(program) {
 			console.log('  Examples:');
 			console.log('    ' + chalk.blueBright(`npf ls, ${chalk.white('a fzf list with preview of local dependencies')}`));
 			console.log('    ' + chalk.blueBright(`npf ls -t, ${chalk.white('a fzf list of latest global installs')}`));
+			console.log('    ' + chalk.blueBright(`npf ls -t --no-fuzzy, ${chalk.white('a normal list of latest global installs')}`));
 			console.log('    ' + chalk.blueBright(`npf ls -g --no-preview, ${chalk.white('a fuzzy list with no preview of global installs')}`));
 			console.log('    ' + chalk.blueBright(`npf ls -g --details, ${chalk.white('a normal, detailed list of global installs')}`));
 			console.log();
@@ -104,7 +105,7 @@ module.exports = function listProgram(program) {
 
 			function localDetails() { // localDetails() is reserved when no feature flag is provided
 				npmListDetails();
-            }
+			}
 
 		});
 
