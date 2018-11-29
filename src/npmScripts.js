@@ -6,12 +6,14 @@
 // Dependencies
 const chalk = require('chalk');
 const spawn = require('child_process').spawn;
-const util = require('util');
+const {
+	promisify
+} = require("es6-promisify");
 
 // Default to node-fzf, the much less capable implementation of fzf, only when fzf is not installed.
 // Using node-fzf will lose many features
 const nfzf = require('node-fzf');
-const commandExists = util.promisify(require('command-exists'));
+const commandExists = promisify(require('command-exists'));
 
 // Local dependencies
 const {
@@ -66,7 +68,7 @@ async function defaultNodeFzf() {
 		key = stringUtil.getRidOfColors(key);
 		key = stringUtil.getRidOfQuotationMarks(key);
 
-		spawn('npm', ['run', key], {
+		return spawn('npm', ['run', key], {
 			stdio: [process.stdin, process.stdout, process.stderr]
 		});
 	});

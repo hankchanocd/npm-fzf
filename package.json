@@ -43,6 +43,7 @@
   "dependencies": {
     "@hankchanocd/npmlist": "^8.0.0",
     "command-exists": "^1.2.8",
+    "es6-promisify": "^6.0.1",
     "node-fzf": "^0.1.2"
   },
   "devDependencies": {
