@@ -1,8 +1,8 @@
 # npm-fzf
 
-[![npm](https://img.shields.io/npm/v/npm-fzf.svg)](https://www.npmjs.com/package/npm-fzf) [![David](https://img.shields.io/david/hankchanocd/npm-fzf.svg)](https://david-dm.org) [![David](https://img.shields.io/david/dev/hankchanocd/npm-fzf.svg)](https://david-dm.org)
+[![npm](https://img.shields.io/npm/v/npm-fzf.svg)](https://www.npmjs.com/package/npm-fzf) ![node](https://img.shields.io/node/v/npm-fzf.svg) [![David](https://img.shields.io/david/hankchanocd/npm-fzf.svg)](https://david-dm.org) [![David](https://img.shields.io/david/dev/hankchanocd/npm-fzf.svg)](https://david-dm.org)
 
-[![Build Status](https://travis-ci.org/hankchanocd/npm-fzf.svg?branch=master)](https://travis-ci.org/hankchanocd/npm-fzf) [![Github issues](https://img.shields.io/github/issues/hankchanocd/npm-fzf.svg)](https://github.com/hankchanocd/npm-fzf/issues) [![Known Vulnerabilities](https://snyk.io/test/github/hankchanocd/npm-fzf/badge.svg?targetFile=package.json)](https://snyk.io/test/github/hankchanocd/npm-fzf?targetFile=package.json) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![install size](https://packagephobia.now.sh/badge?p=npm-fzf)](https://packagephobia.now.sh/result?p=npm-fzf) [![Build Status](https://travis-ci.org/hankchanocd/npm-fzf.svg?branch=master)](https://travis-ci.org/hankchanocd/npm-fzf) [![Github issues](https://img.shields.io/github/issues/hankchanocd/npm-fzf.svg)](https://github.com/hankchanocd/npm-fzf/issues) [![Known Vulnerabilities](https://snyk.io/test/github/hankchanocd/npm-fzf/badge.svg?targetFile=package.json)](https://snyk.io/test/github/hankchanocd/npm-fzf?targetFile=package.json) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 > Fuzzy search npm modules with `fzf`
 
