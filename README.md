@@ -14,7 +14,7 @@
 <br />
 <br />
 
-`npm-fzf`, also called `npf`, fuzzifies some most commonly used npm commands with [`fzf`](https://github.com/junegunn/fzf), i.e. `npm ls`, `npm search`, `npm run`, creating a more fulfilling develop experience at terminal.
+`npm-fzf`, short-named `npf`, provides fuzzy search for some most commonly used npm commands with [`fzf`](https://github.com/junegunn/fzf), i.e. `npm ls`, `npm search`, `npm run`, creating a more fulfilling develop experience with `npm`.
 
 ## Requirements
 
@@ -218,7 +218,7 @@ To perform unit tests and integration tests, simply run `npm test`. (Need Help)
 
 ## Contribution
 
-If you have a suggestion, leave it on [Issues](https://github.com/hankchanocd/npm-fzf/issues) for discussion first. I will reply in no more than 3 days. See [here](./CONTRIBUTING.md) on how to contribute.
+If you have any suggestion, leave it on [Issues](https://github.com/hankchanocd/npm-fzf/issues) for discussion first. See [here](./CONTRIBUTING.md) on how to contribute.
 
 [`fzf`](https://github.com/junegunn/fzf) empowers many features that would otherwise be hard to imagine. If you haven't heard of `fzf`, check out junegunn's [`fzf`](https://github.com/junegunn/fzf). Check out my [Dotfiles](https://gitlab.com/hankchanocd/dotfiles/tree/master) to see more use cases of `fzf`.
 
