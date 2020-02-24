@@ -43,22 +43,22 @@
   "dependencies": {
     "@hankchanocd/npmlist": "^8.0.2",
     "command-exists": "^1.2.8",
-    "es6-promisify": "^6.0.1",
-    "node-fzf": "^0.2.0"
+    "es6-promisify": "^6.0.2",
+    "node-fzf": "^0.2.1"
   },
   "devDependencies": {
-    "commitizen": "^3.1.1",
+    "commitizen": "^3.1.2",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jest": "^22.7.2",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^22.21.0",
     "eslint-plugin-promise": "^4.2.1",
     "ghooks": "^2.0.4",
-    "jest": "^24.8.0",
-    "nodemon": "^1.19.1",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
     "npm-run-all": "^4.1.5",
     "opn-cli": "^4.1.0",
-    "semantic-release": "^15.13.18"
+    "semantic-release": "^15.14.0"
   },
   "config": {
     "ghooks": {
