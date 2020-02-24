@@ -34,7 +34,7 @@
     "bin/",
     "README.md"
   ],
-  "author": "Hank Chan <hankchanth@icloud.com> (https://github.com/hankchanocd)",
+  "author": "Hank Chan <hankchan@cubesole.ai> (https://github.com/hankchanocd)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hankchanocd/npm-fzf/issues"
